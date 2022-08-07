@@ -1,0 +1,22 @@
+/* GameFrame.java
+ * Shane Kenny
+ * 26-09-2021
+ */
+
+import javax.swing.JFrame;
+
+public class GameFrame extends JFrame {
+
+	GameFrame() {
+
+		this.add(new GamePanel());
+		this.setTitle("Snake");
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setResizable(false);
+		this.pack();
+		this.setVisible(true);
+		this.setLocationRelativeTo(null);
+
+	}
+
+}
